@@ -1,0 +1,1675 @@
+<div class="container-fluid">
+  <app-pagetitle title="Form Wizard" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+
+  <div class="row">
+    <!-- <div class="col-lg-6">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title mb-4">Icon Wizard</h4>
+
+          <aw-wizard [navBarLayout]="'large-empty-symbols'">
+            <aw-wizard-step>
+              <ng-template awWizardStepSymbol>
+                <i class="fas fa-user"></i>
+              </ng-template>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group row mb-3">
+                    <label class="col-md-3 col-form-label">Email</label>
+                    <div class="col-md-9">
+                      <input class="form-control" name="email" type="text" placeholder="Enter email">
+                    </div>
+                  </div>
+                  <div class="form-group row mb-3">
+                    <label class="col-md-3 col-form-label">Username</label>
+                    <div class="col-md-9">
+                      <input class="form-control" name="username" type="text" placeholder="Enter Username">
+                    </div>
+                  </div>
+                  <div class="form-group row mb-3">
+                    <label class="col-md-3 col-form-label">Password</label>
+                    <div class="col-md-9">
+                      <input class="form-control" name="password" type="password" placeholder="Enter Password">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="list-inline wizard mb-0">
+                <li class="next list-inline-item float-right"><button class="btn btn-primary" awNextStep>Next</button>
+                </li>
+              </ul>
+            </aw-wizard-step>
+
+            <aw-wizard-step>
+              <ng-template awWizardStepSymbol>
+                <i class="fas fa-user-circle"></i>
+              </ng-template>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group row mb-3">
+                    <label class="col-md-3 col-form-label">First name</label>
+                    <div class="col-md-9">
+                      <input class="form-control" name="email" type="text" placeholder="Enter email">
+                    </div>
+                  </div>
+                  <div class="form-group row mb-3">
+                    <label class="col-md-3 col-form-label">Last name</label>
+                    <div class="col-md-9">
+                      <input class="form-control" name="username" type="text" placeholder="Enter Username">
+                    </div>
+                  </div>
+                  <div class="form-group row mb-3">
+                    <label class="col-md-3 col-form-label">Password</label>
+                    <div class="col-md-9">
+                      <input class="form-control" name="password" type="password" placeholder="Enter Password">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="list-inline wizard mb-0">
+                <li class="previous list-inline-item"><button class="btn btn-primary" awPreviousStep>Previous</button>
+                </li>
+                <li class="next list-inline-item float-right"><button class="btn btn-primary" awNextStep>Next</button>
+                </li>
+              </ul>
+            </aw-wizard-step>
+
+            <aw-wizard-step>
+              <ng-template awWizardStepSymbol>
+                <i class="fas fa-check-circle"></i>
+              </ng-template>
+              <div class="p-3 text-center">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">I agree with the Terms and Conditions.</label>
+                </div>
+              </div>
+              <ul class="list-inline wizard mb-0">
+                <li class="previous list-inline-item"><button class="btn btn-primary" awPreviousStep>Previous</button>
+                </li>
+              </ul>
+            </aw-wizard-step>
+          </aw-wizard>
+        </div>
+      </div>
+    </div> -->
+    
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title mb-4"> Title Wizard</h4>
+
+          <aw-wizard [navBarLayout]="'large-empty-symbols'">
+            <aw-wizard-step stepTitle="Contact Information">
+              <ng-template awWizardStepSymbol>1</ng-template>
+              <div class="row mt-3">
+                <div class="col-12">
+                  <div class="form-group row">
+                    <label for="example-date-input" class="col-md-3 col-form-label">Date</label>
+                    <div class="col-md-5">
+                      <input class="form-control" type="date" value="2019-08-19" id="example-date-input">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-form-label col-md-3">Sex</label>
+                    <div class="col-md-5">
+                        <select class="form-control" id="sel1">
+                          <option>Select</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-form-label col-md-3">Surname</label>
+                    <div class="col-md-5">
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-form-label col-md-3">Firstname</label>
+                  <div class="col-md-5">
+                      <input type="password" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="example-date-input" class="col-md-3 col-form-label">Date of Birth</label>
+                  <div class="col-md-5">
+                    <input class="form-control" type="date" value="2019-08-19" id="example-date-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-form-label col-md-3">Phone Number</label>
+                  <div class="col-md-5">
+                      <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-form-label col-md-3">Emergancy Phone Number</label>
+                  <div class="col-md-5">
+                      <input type="text" class="form-control">
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label class="col-form-label col-md-3">Email Address</label>
+                  <div class="col-md-5">
+                      <input type="email" class="form-control">
+                  </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-md-3">Address</label>
+                <div class="col-md-5">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-form-label col-md-3">Country of Residence</label>
+                <div class="col-md-5">
+                    <select class="form-control" id="sel1">
+                        <option>Select</option>
+                        <option>India</option>
+                        <option>America</option>
+                        <option>Rasia</option>
+                      </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-form-label col-md-3">Best time to reach you on a buisness (USA Central Standard Time) </label>
+                <div class="col-md-5">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+                </div>
+              </div>
+              <ul class="list-inline wizard mb-0">
+                <li class="next list-inline-item float-right"><button class="btn btn-primary" awNextStep>Next</button>
+                </li>
+              </ul>
+            </aw-wizard-step>
+
+            <aw-wizard-step stepTitle="Physician Information">
+              <ng-template awWizardStepSymbol>2</ng-template>
+
+              <div class="row mt-3">
+                <div class="col-12">
+                  <div class="form-group row">
+                    <label class="col-form-label col-md-2">Physician Name</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-form-label col-md-2">Address</label>
+                    <div class="col-md-4">
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-2">City/State</label>
+                    <div class="col-md-4">
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-2">Phone</label>
+                    <div class="col-md-4">
+                        <input type="password" class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="list-inline wizard mb-0">
+                <li class="previous list-inline-item"><button class="btn btn-primary" awPreviousStep>Previous</button>
+                </li>
+                <li class="next list-inline-item float-right"><button class="btn btn-primary" awNextStep>Next</button>
+                </li>
+              </ul>
+            </aw-wizard-step>
+
+            <aw-wizard-step stepTitle="Patients Current History">
+              <ng-template awWizardStepSymbol>3</ng-template>
+
+              <div class="row mt-3">
+                <div class="col-12">
+                  <div class="form-group row">
+                    <label class="col-form-label col-md-4">Are you currently on any treatment for cancer? </label>
+                    <div class="col-md-3">
+                        <select class="form-control" id="sel1">
+                            <option>Select</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-form-label col-md-4">What drugs and how long have you been on them?</label>
+                    <div class="col-md-3">
+                        <select class="form-control" id="sel1">
+                            <option>Select</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-form-label col-md-4">Are you experiencing any problems with treatment:Nausea/Vomiting/Fatigue?</label>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-form-label col-md-4">Nausea</label>
+                    <div class="col-md-3">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Vomiting</label>
+                    <div class="col-md-3">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-form-label col-md-4">Fatigue</label>
+                  <div class="col-md-3">
+                      <label class="switch">
+                          <input class="switch-input" type="checkbox" />
+                          <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                          <span class="switch-handle"></span> 
+                      </label>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label class="col-form-label col-md-4">Hiccups</label>
+                  <div class="col-md-3">
+                      <label class="switch">
+                          <input class="switch-input" type="checkbox" />
+                          <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                          <span class="switch-handle"></span> 
+                      </label>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label class="col-form-label col-md-4">Do you have any of the following Symptoms?</label>
+                  <div class="col-md-4">
+                      <input type="text" class="form-control">
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label class="col-form-label col-md-4">Lumps in breast</label>
+                  <div class="col-md-3">
+                      <label class="switch">
+                          <input class="switch-input" type="checkbox" />
+                          <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                          <span class="switch-handle"></span> 
+                      </label>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label class="col-form-label col-md-4">Change in nipple</label>
+                  <div class="col-md-3">
+                      <label class="switch">
+                          <input class="switch-input" type="checkbox" />
+                          <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                          <span class="switch-handle"></span> 
+                      </label>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label class="col-form-label col-md-4">Nipple discharge</label>
+                  <div class="col-md-3">
+                      <label class="switch">
+                          <input class="switch-input" type="checkbox" />
+                          <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                          <span class="switch-handle"></span> 
+                      </label>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label class="col-form-label col-md-4">Tender breast</label>
+                  <div class="col-md-3">
+                      <label class="switch">
+                          <input class="switch-input" type="checkbox" />
+                          <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                          <span class="switch-handle"></span> 
+                      </label>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label class="col-form-label col-md-4">Hot flashes</label>
+                  <div class="col-md-3">
+                      <label class="switch">
+                          <input class="switch-input" type="checkbox" />
+                          <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                          <span class="switch-handle"></span> 
+                      </label>
+                  </div>
+              </div>
+              <div class="form-group row">
+                  <label class="col-form-label col-md-4">Lumps under arms</label>
+                  <div class="col-md-3">
+                      <label class="switch">
+                          <input class="switch-input" type="checkbox" />
+                          <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                          <span class="switch-handle"></span> 
+                      </label>
+                  </div>
+              </div>
+            <div class="form-group row">
+              <label class="col-form-label col-md-4">Date of last Mammogram?</label>
+              <div class="col-md-3">
+                  
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Constipation</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Diarrhea</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Rectal Bleeding</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Abdomen pain</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Blood in stools or Black stools</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Tenderness in stomach</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Thin or pencil like stools</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Date of last Mommogram?</label>
+              <div class="col-md-3">
+                  
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Cravings for ice</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Black stools</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Nose Bleeds</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Vertigo</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Bruising</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Weak or Brittle finger nails</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Numbness in arms or legs</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Transfusion in last 30 days</label>
+              <div class="col-md-3">
+                  <input type="text" class="form-control">
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Chills</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Fever</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Sweats</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Cough</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Chest pain</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Shortness of Breath</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">If on oxygen, how much?</label>
+              <div class="col-md-3">
+                  <input type="text" class="form-control">
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Blood in phlegm:</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-2">If so,color</label>
+              <div class="col-md-3">
+                  <input type="text" class="form-control">
+              </div>
+              <!-- <lable class="col-form-label col-md-2">and how long</lable> -->
+              <div class="col-md-3">
+                  <input type="text" class="form-control">
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Abdominal pain</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Vertigo</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">Lumps /Bumps /swollen lymph nodes?</label>
+              <div class="col-md-3">
+                  <label class="switch">
+                      <input class="switch-input" type="checkbox" />
+                      <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                      <span class="switch-handle"></span> 
+                  </label>
+              </div>
+          </div>
+          <div class="form-group row">
+              <label class="col-form-label col-md-4">If yes, where is it located?</label>
+              <div class="col-md-3">
+                  <input type="text" class="form-control">
+              </div>
+          </div>
+              
+                </div>
+              </div>
+
+              <ul class="list-inline wizard mb-0">
+                <li class="previous list-inline-item"><button class="btn btn-primary" awPreviousStep>Previous</button>
+                </li>
+                <li class="next list-inline-item float-right"><button class="btn btn-primary" awNextStep>Next</button>
+                </li>
+              </ul>
+            </aw-wizard-step>
+
+            <aw-wizard-step stepTitle="Testing">
+              <ng-template awWizardStepSymbol>4</ng-template>
+
+              <div class="row mt-3">
+                <div class="col-12">
+                  <div class="form-group row">
+                    <label class="col-form-label col-md-4">How you had any of these test done?</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="col-form-label col-md-4">MRI</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">When?</label>
+                    <div class="col-md-4">
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Where?</label>
+                    <div class="col-md-4">
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Upload Image & Test Result</label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="file">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">XRays</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">When?</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Where?</label>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Upload Image & Test Result</label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="file">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Bone Scan</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">When?</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Where?</label>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Upload Image & Test Result</label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="file">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Colonoscopy</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">When?</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Where?</label>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Upload Image & Test Result</label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="file">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Radiology</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">When?</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Where?</label>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Upload Image & Test Result</label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="file">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Mammogram</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">When?</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Where?</label>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Upload Image & Test Result</label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="file">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Biopsy type</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">When?</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Where?</label>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Upload Image & Test Result</label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="file">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">City Scan</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">When?</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Where?</label>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Upload Image & Test Result</label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="file">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Any other test?</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">When?</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Where?</label>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Upload Image & Test Result</label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="file">
+                    </div>
+                </div>
+
+                 
+                </div>
+              </div>
+
+              <ul class="list-inline wizard mb-0">
+                <li class="previous list-inline-item"><button class="btn btn-primary" awPreviousStep>Previous</button>
+                </li>
+                <li class="next list-inline-item float-right"><button class="btn btn-primary" awNextStep>Next</button>
+                </li>
+              </ul>
+            </aw-wizard-step>
+
+            <aw-wizard-step stepTitle="Health History">
+              <ng-template awWizardStepSymbol>5</ng-template>
+
+              <div class="row mt-3">
+                <div class="col-12">
+                  <p>Please mark(with an X)if you've had any of the following now or if you have had them in the past:</p>
+                  <div class="form-group row">
+                    <label class="col-form-label col-md-4">Eyes</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Ears</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Cerebro vascular</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Breast</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Gastroinstestinal</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Renal/ GI</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Miscellaneous</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Skin</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Respiratory</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Cardio Vascular</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Male GI</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Female GI</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Psychiatric</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Hematology</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Infections</label>
+                    <div class="col-md-4">
+                        <select class="form-control" id="sel1">
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">Have you had a recent weight gain/loss?</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-4">If yes,please specify how much and when </label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="text" placeholder="How Much">
+                    </div>
+                    <div class="col-md-4">
+                      <input class="form-control" placeholder="When" type="date"  id="example-date-input">
+                    </div>
+                </div>
+              </div>
+            </div>
+
+              <ul class="list-inline wizard mb-0">
+                <li class="previous list-inline-item"><button class="btn btn-primary" awPreviousStep>Previous</button>
+                </li>
+                <li class="next list-inline-item float-right"><button class="btn btn-primary" awNextStep>Next</button>
+                </li>
+              </ul>
+            </aw-wizard-step>
+
+            <aw-wizard-step stepTitle="History of Current illness">
+              <ng-template awWizardStepSymbol>6</ng-template>
+
+              <div class="row mt-3">
+                <div class="col-12">
+                  <div class="form-group row">
+                    <label class="col-form-label col-md-3">Are you pregnant? </label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label> 
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="col-form-label col-md-3">Are you trying to get pregnant? </label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label> 
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-3">If you are of childbearing age, are you on any form of contraceptives(birth control)? </label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label> 
+                    </div>
+                </div>
+
+              </div>
+              </div>
+
+              <ul class="list-inline wizard mb-0">
+                <li class="previous list-inline-item"><button class="btn btn-primary" awPreviousStep>Previous</button>
+                </li>
+                <li class="next list-inline-item float-right"><button class="btn btn-primary" awNextStep>Next</button>
+                </li>
+              </ul>
+            </aw-wizard-step>
+            
+            <aw-wizard-step stepTitle="Medicines">
+              <ng-template awWizardStepSymbol>7</ng-template>
+
+              <div class="row mt-3">
+                <div class="col-12">
+                  <div class="form-group row">
+                    <label class="col-form-label col-md-4">Do you take prescription medications presently?</label>
+                    <label class="switch">
+                        <input class="switch-input" type="checkbox" />
+                        <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                        <span class="switch-handle"></span> 
+                    </label>
+                </div>
+                <div class="form-group row">
+                    <label class="col-form-label col-md-10">if so,please list them (including dosage), when you take them, and why you take each on below:</label>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-form-label col-md-3">Medications</label>
+                    <label class="col-form-label col-md-3">Dosage/MG</label>
+                    <label class="col-form-label col-md-3">When(how many times a day)</label>
+                    <label class="col-form-label col-md-3">When you take this medication</label>
+                    
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div> 
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-md-3">Medications</label>
+                    <label class="col-form-label col-md-3">Dosage/MG</label>
+                    <label class="col-form-label col-md-3">When(how many times a day)</label>
+                    <label class="col-form-label col-md-3">When you take this medication</label>
+                    
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div> 
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-md-6">Do you take non-prescription medications? For example: Aspirin, Tylenol, laxatives, diet pills, vitamins, antacids, herbal remedies supplements or cold remedies.</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-md-10">if so,please list them below, when you take them, and why you take each on below:</label>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-form-label col-md-3">Medications</label>
+                    <label class="col-form-label col-md-3">Dosage/MG</label>
+                    <label class="col-form-label col-md-3">When(how many times a day)</label>
+                    <label class="col-form-label col-md-3">When you take this medication</label>
+                    
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div> 
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-md-3">Medications</label>
+                    <label class="col-form-label col-md-3">Dosage/MG</label>
+                    <label class="col-form-label col-md-3">When(how many times a day)</label>
+                    <label class="col-form-label col-md-3">When you take this medication</label>
+                    
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div> 
+                  </div>
+              </div>
+              </div>
+
+              <ul class="list-inline wizard mb-0">
+                <li class="previous list-inline-item"><button class="btn btn-primary" awPreviousStep>Previous</button>
+                </li>
+                <li class="next list-inline-item float-right"><button class="btn btn-primary" awNextStep>Next</button>
+                </li>
+              </ul>
+            </aw-wizard-step>
+
+            <aw-wizard-step stepTitle="Family History">
+              <ng-template awWizardStepSymbol>8</ng-template>
+
+              <div class="row mt-3">
+                <div class="col-12">
+                  <h4 class="card-title">Family History Quetionaire</h4>
+                  <div class="form-group row">
+                    <h4 class="col-form-label col-md-10">Family Health History</h4>
+                </div>
+                <div class="form-group row">
+                    <p class="col-form-label col-md-10">Please list your family members and their health status</p>
+                </div>
+                <div class="form-group row">
+                    <h4 class="col-form-label col-md-10">Mother</h4>
+                </div>
+        
+                <div class="form-group row">
+                    <label class="col-form-label col-md-3">Year Born</label>
+                    <label class="col-form-label col-md-3">If leaving, health status</label>
+                    <label class="col-form-label col-md-3">If not leaving</label>
+                    <label class="col-form-label col-md-3">Cause of Death</label>
+                    
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Select Present Health">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Age At Death">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div> 
+                </div>
+
+                <div class="form-group row">
+                    <h4 class="col-form-label col-md-10">Father</h4>
+                </div>
+        
+                <div class="form-group row">
+                    <label class="col-form-label col-md-3">Year Born</label>
+                    <label class="col-form-label col-md-3">If leaving, health status</label>
+                    <label class="col-form-label col-md-3">If not leaving</label>
+                    <label class="col-form-label col-md-3">Cause of Death</label>
+                    
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Select Present Health">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Age At Death">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div> 
+                </div>
+
+                <div class="form-group row">
+                    <h4 class="col-form-label col-md-10">Brothers/Sisters</h4>
+                </div>
+        
+                <div class="form-group row">
+                    <label class="col-form-label col-md-3">Year Born</label>
+                    <label class="col-form-label col-md-3">If leaving, health status</label>
+                    <label class="col-form-label col-md-3">If not leaving</label>
+                    <label class="col-form-label col-md-3">Cause of Death</label>
+                    
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Select Present Health">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Age At Death">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div> 
+                </div>
+
+                <div class="form-group row">
+                    <h4 class="col-form-label col-md-10">Childrens(Please List)</h4>
+                </div>
+        
+                <div class="form-group row">
+                    <label class="col-form-label col-md-3">Year Born</label>
+                    <label class="col-form-label col-md-3">If leaving, health status</label>
+                    <label class="col-form-label col-md-3">If not leaving</label>
+                    <label class="col-form-label col-md-3">Cause of Death</label>
+                    
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Select Present Health">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Age At Death">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control">
+                    </div> 
+                </div>
+
+                 <div class="form-group row">
+                    <label class="col-form-label col-md-6">Does anyone in your family have heart disease?</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-md-6">Please List</label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="text" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-md-6">Does anyone in your family have diabetes?</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-md-6">Does anyone in your family have a hereditary disease?</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-md-6">Does anyone in your family have a history of cancer?</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-md-6">Have you or any of your relatives ever had genetic testing?</label>
+                    <div class="col-md-4">
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox" />
+                            <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                            <span class="switch-handle"></span> 
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-md-6">Any follow-up? Please give details</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+              </div>
+              </div>
+
+              <ul class="list-inline wizard mb-0">
+                <li class="previous list-inline-item"><button class="btn btn-primary" awPreviousStep>Previous</button>
+                </li>
+                <li class="next list-inline-item float-right"><button class="btn btn-primary" awNextStep>Next</button>
+                </li>
+              </ul>
+            </aw-wizard-step>
+
+            <aw-wizard-step stepTitle="Patient consent">
+              <ng-template awWizardStepSymbol>9</ng-template>
+
+              <div class="row mt-3">
+                <div class="col-12">
+
+                  <div class="form-group row">
+                   
+                    <div class="col-md-12">
+                       <p>AUTHORIZATION FOR USE AND DISCLOSURE OF PROTECTED HEALTH INFORMATION<br>CONSENT TO DISCUSS PATIENT'S MEDICAL CONDITION WITH FAMILY OR FRIENDS AND MEDICAL DOCTOR(S)</p>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-md-12">
+                        <p>I, <input type="text"> GIVE THE PHYSICIANS AND STAFF OF Cancer Help Second opinion(CHSO), PERMISSION TO DISCUSS MY MEDICAL CONDITION (PLEASE LIST FAMILY MEMBERS & FRIENDS ONLY), </p>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-md-3">Surname </label>
+                    <div class="col-md-4">
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-form-label col-md-3">First Name </label>
+                  <div class="col-md-4">
+                      <input class="form-control" type="text">
+                  </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-form-label col-md-3">Relationship</label>
+                <div class="col-md-4">
+                    <input class="form-control" type="text">
+                </div>
+              </div>
+            <div class="form-group row">
+              <label class="col-form-label col-md-3">Phone </label>
+              <div class="col-md-4">
+                  <input class="form-control" type="text">
+              </div>
+            </div>
+          <div class="form-group row">
+            <label class="col-form-label col-md-3">Email </label>
+            <div class="col-md-4">
+                <input class="form-control" type="email">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-md-12">
+                <p>THIS IS AN INDEFINITE FORM UNLESS OTHERWISE SPECIFIED</p>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-form-label col-md-3">PATIENT SIGNATURE </label>
+            <div class="col-md-4">
+                <input class="form-control" type="text">
+            </div>
+          </div>
+         </div>
+        </div>
+
+              <ul class="list-inline wizard mb-0">
+                <li class="previous list-inline-item"><button class="btn btn-primary" awPreviousStep>Previous</button>
+                </li>
+                <li class="next list-inline-item float-right"><button class="btn btn-primary" awNextStep>submit</button>
+                </li>
+              </ul>
+            </aw-wizard-step>
+
+            <aw-wizard-step stepTitle="Patients Current History">
+              <ng-template awWizardStepSymbol>10</ng-template>
+              <div class="p-3 text-center">
+                <img src="./assets/images/done.png">
+                <h2>Awesome!</h2>
+                <h4>Thank you for completing the intake registration, Email sent to Patients address.</h4>
+              </div>
+              <ul class="list-inline wizard mb-0">
+                <li class="previous list-inline-item"><button class="btn btn-primary" awPreviousStep>Previous</button>
+                </li>
+              </ul>
+            </aw-wizard-step>
+          </aw-wizard>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+  .switch {
+      position: relative;
+      display: block;
+      vertical-align: top;
+      width: 100px;
+      height: 30px;
+      padding: 3px;
+      margin: 0 10px 10px 0;
+      background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+      background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+      border-radius: 18px;
+      box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+      box-sizing:content-box;
+  }
+  .switch-input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      box-sizing:content-box;
+  }
+  .switch-label {
+      position: relative;
+      display: block;
+      height: inherit;
+      font-size: 10px;
+      text-transform: uppercase;
+      background: #eceeef;
+      border-radius: inherit;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+      box-sizing:content-box;
+  }
+  .switch-label:before, .switch-label:after {
+      position: absolute;
+      top: 50%;
+      margin-top: -.5em;
+      line-height: 1;
+      -webkit-transition: inherit;
+      -moz-transition: inherit;
+      -o-transition: inherit;
+      transition: inherit;
+      box-sizing:content-box;
+  }
+  .switch-label:before {
+      content: attr(data-off);
+      right: 11px;
+      color: #aaaaaa;
+      text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  }
+  .switch-label:after {
+      content: attr(data-on);
+      left: 11px;
+      color: #FFFFFF;
+      text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+  }
+  .switch-input:checked ~ .switch-label {
+      background: blue;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+  .switch-input:checked ~ .switch-label:before {
+      opacity: 0;
+  }
+  .switch-input:checked ~ .switch-label:after {
+      opacity: 1;
+  }
+  .switch-handle {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 28px;
+      height: 28px;
+      background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+      background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+      border-radius: 100%;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  .switch-handle:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -6px 0 0 -6px;
+      width: 12px;
+      height: 12px;
+      background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+      background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+      border-radius: 6px;
+      box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+  }
+  .switch-input:checked ~ .switch-handle {
+      left: 74px;
+      box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+   
+  /* Transition
+  ========================== */
+  .switch-label, .switch-handle {
+      transition: All 0.3s ease;
+      -webkit-transition: All 0.3s ease;
+      -moz-transition: All 0.3s ease;
+      -o-transition: All 0.3s ease;
+  }
+  </style>

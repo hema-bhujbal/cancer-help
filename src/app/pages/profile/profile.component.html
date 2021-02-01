@@ -1,0 +1,192 @@
+<div class="d-flex">
+<h4>My Profile</h4>
+<button class="btn btn-danger float-right" style="position: absolute;right: 3%;"><i class="fa fa-trash"></i> Delete Account</button>
+</div>
+<hr>
+<div class="card pt-4">
+<div class="container-fluid">
+    <div class="row">
+      <!-- left column -->
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="text-center">
+          <img src="http://lorempixel.com/200/200/people/9/" class="avatar rounded-circle" alt="avatar">
+          <h4>John Doe</h4>
+          <button class="btn-success btn">Update Photo</button>
+          <!-- <input type="file" class="text-center center-block well well-sm"> -->
+        </div>
+      </div>
+      <!-- edit form column -->
+      <div class="vl"></div>
+      <div class="col-md-9 col-sm-6 col-xs-12 personal-info">
+       
+        <h5 style="color: gray;">General Info</h5>
+        <form class="form-horizontal" role="form">
+            <div class="row mt-3">
+                <div class="col">
+                    <label class="control-label">Gender</label>
+                </div>
+                <div class="col">
+                    <label class="control-label">First name</label>
+                </div>
+                <div class="col">
+                    <label class="control-label">Last name</label>
+                </div>
+                
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-check-inline">
+                        <label class="form-check-label" for="radio1">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Male
+                        </label>
+                    </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label" for="radio2">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Female
+                        </label>
+                      </div>
+                </div>
+                <div class="col">
+                    <input class="form-control"  type="text">
+                </div>
+                <div class="col">
+                    <input class="form-control" type="text">
+                </div> 
+            </div>
+
+            <div class="row ">
+                <div class="col">
+                    <label class="control-label">Date of Birth</label>
+                </div>
+                <div class="col">
+                    <label class="control-label">Email Address</label>
+                </div>
+                <div class="col">
+                    <label class="control-label">Phone Number</label>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <input class="form-control" type="date" id="example-date-input">
+                </div>
+                <div class="col">
+                    <input class="form-control"  type="text">
+                </div>
+                <div class="col">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <label class="control-label">Preferd Language</label>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <hr>
+            <h5 style="color: gray;">Other Info</h5>
+            <div class="row mt-3">
+                <div class="col">
+                    <label class="control-label">Blood Group</label>
+                </div>
+                <div class="col">
+                    <label class="control-label">Age</label>
+                </div>
+                <div class="col">
+                    <label class="control-label">Marital Status</label>
+                </div>   
+            </div>
+
+            <div class="row mb-4">
+               
+                <div class="col">
+                    <select class="form-control" id="sel1">
+                        <option>Select</option>
+                        <option>A+ve</option>
+                        <option>A-ve</option>
+                        <option>O+ve</option>
+                        <option>O-ve</option>
+                        <option>B+ve</option>
+                        <option>B-ve</option>
+                      </select>
+                </div>
+                <div class="col">
+                    <select class="form-control" id="sel1">
+                        <option>Select</option>
+                        <option>1-5</option>
+                        <option>5-10</option>
+                        <option>10-15</option>
+                        <option>15-20</option>
+                        <option>20-25</option>
+                        <option>25-30</option>
+                      </select>
+                </div>
+                <div class="col">
+                    <div class="form-check-inline">
+                        <label class="form-check-label" for="radio1">
+                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Married
+                        </label>
+                    </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label" for="radio2">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Single
+                        </label>
+                      </div>
+                </div> 
+            </div>
+            <hr>
+            <h5 style="color: gray;">Password</h5>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <label class="control-label">Password</label>
+                </div>
+                <div class="col-md-4">
+                    <label class="control-label">Update Password</label>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="password" name="pwd" value="123254" id="input-pwd" class="form-control validate" required>
+                    <span toggle="#input-pwd" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                  
+                </div>
+                <div class="col-md-4">
+                    <input type="password" name="pwd" value="123254" id="input-pwd1" class="form-control validate" required>
+                    <span toggle="#input-pwd1" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                </div>  
+            </div>
+        
+          <div class="form-group">
+            
+            <div class="col-md-12">
+              <input class="btn btn-success float-right mb-2" value="Update Profile" type="button">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+.vl {
+    border-left: 1px solid lightgray;
+    height: 647px;
+    position: absolute;
+    left: 24%;
+    margin-left: -3px;
+    top: 0;
+  }
+  span.field-icon {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  right: 1.5rem;
+  top: 0.7rem;
+  color: gray;
+  z-index: 2;
+}
+</style>
